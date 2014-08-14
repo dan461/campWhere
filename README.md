@@ -1,4 +1,5 @@
+Dan Shriver
 campWhere
 =========
 
-Park finder app iOS
+Park finder app. iOS, universal

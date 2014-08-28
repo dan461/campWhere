@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CampinSearchBoxView.h"
 
-@interface CampinViewController : UIViewController
+static const double EARTH_RADIUS = 3960; // MILES
+
+@interface CampinViewController : UIViewController <SearchBoxDelegate>
+
+- (void)showButton;
+- (void)startIpadSearchWithLocation:(CLLocationCoordinate2D)location radius:(int)searchRadius;
 
 @end

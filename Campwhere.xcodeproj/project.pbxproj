@@ -7,6 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E03AF31C19A409B0006851F8 /* CoreDataTutorial.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = E03AF31B19A409B0006851F8 /* CoreDataTutorial.sqlite */; };
+		E04059031992879400E26A16 /* CampinSearchBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = E04059021992879400E26A16 /* CampinSearchBoxView.m */; };
+		E0405905199287BD00E26A16 /* CampinSearchBoxView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0405904199287BD00E26A16 /* CampinSearchBoxView.xib */; };
+		E04059071992A83300E26A16 /* boxBG.png in Resources */ = {isa = PBXBuildFile; fileRef = E04059061992A83300E26A16 /* boxBG.png */; };
+		E04059091992BCC200E26A16 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E04059081992BCC200E26A16 /* GoogleMaps.framework */; };
+		E04059101992BD0400E26A16 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E040590A1992BD0300E26A16 /* AVFoundation.framework */; };
+		E04059111992BD0400E26A16 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E040590B1992BD0400E26A16 /* CoreData.framework */; };
+		E04059121992BD0400E26A16 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E040590C1992BD0400E26A16 /* CoreLocation.framework */; };
+		E04059131992BD0400E26A16 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E040590D1992BD0400E26A16 /* CoreText.framework */; };
+		E04059141992BD0400E26A16 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E040590E1992BD0400E26A16 /* GLKit.framework */; };
+		E04059151992BD0400E26A16 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E040590F1992BD0400E26A16 /* ImageIO.framework */; };
+		E04059191992BD3500E26A16 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E04059161992BD3500E26A16 /* libc++.dylib */; };
+		E040591A1992BD3500E26A16 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E04059171992BD3500E26A16 /* libicucore.dylib */; };
+		E040591B1992BD3500E26A16 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E04059181992BD3500E26A16 /* libz.dylib */; };
+		E040591D1992BD4000E26A16 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E040591C1992BD4000E26A16 /* OpenGLES.framework */; };
+		E04059201992BD4C00E26A16 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E040591E1992BD4C00E26A16 /* QuartzCore.framework */; };
+		E04059211992BD4C00E26A16 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E040591F1992BD4C00E26A16 /* SystemConfiguration.framework */; };
+		E04059241992BFD500E26A16 /* GoogleMaps.framework in Resources */ = {isa = PBXBuildFile; fileRef = E04059081992BCC200E26A16 /* GoogleMaps.framework */; };
+		E04059261992C0BB00E26A16 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E04059251992C0BB00E26A16 /* GoogleMaps.framework */; };
+		E04059281992C11800E26A16 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E04059271992C11800E26A16 /* GoogleMaps.bundle */; };
+		E061F4CE1993E78E00E3101D /* CoreLocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E061F4CD1993E78E00E3101D /* CoreLocationController.m */; };
+		E061F4D119942B1800E3101D /* Campwhere.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E061F4CF19942B1800E3101D /* Campwhere.xcdatamodeld */; };
 		E09963611991350200C17625 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E09963601991350200C17625 /* Foundation.framework */; };
 		E09963631991350200C17625 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E09963621991350200C17625 /* CoreGraphics.framework */; };
 		E09963651991350200C17625 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E09963641991350200C17625 /* UIKit.framework */; };
@@ -24,6 +46,17 @@
 		E099638F1991350200C17625 /* CampwhereTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E099638E1991350200C17625 /* CampwhereTests.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXBuildRule section */
+		E09A319E19A7AF7A0045FEDC /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+			);
+		};
+/* End PBXBuildRule section */
+
 /* Begin PBXContainerItemProxy section */
 		E09963861991350200C17625 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -35,6 +68,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E03AF31B19A409B0006851F8 /* CoreDataTutorial.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = CoreDataTutorial.sqlite; sourceTree = "<group>"; };
+		E04059011992879400E26A16 /* CampinSearchBoxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CampinSearchBoxView.h; sourceTree = "<group>"; };
+		E04059021992879400E26A16 /* CampinSearchBoxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CampinSearchBoxView.m; sourceTree = "<group>"; };
+		E0405904199287BD00E26A16 /* CampinSearchBoxView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CampinSearchBoxView.xib; sourceTree = "<group>"; };
+		E04059061992A83300E26A16 /* boxBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = boxBG.png; path = assets/boxBG.png; sourceTree = SOURCE_ROOT; };
+		E04059081992BCC200E26A16 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
+		E040590A1992BD0300E26A16 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E040590B1992BD0400E26A16 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		E040590C1992BD0400E26A16 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		E040590D1992BD0400E26A16 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		E040590E1992BD0400E26A16 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		E040590F1992BD0400E26A16 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		E04059161992BD3500E26A16 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		E04059171992BD3500E26A16 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		E04059181992BD3500E26A16 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		E040591C1992BD4000E26A16 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		E040591E1992BD4C00E26A16 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E040591F1992BD4C00E26A16 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		E04059251992C0BB00E26A16 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
+		E04059271992C11800E26A16 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		E061F4CC1993E78E00E3101D /* CoreLocationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreLocationController.h; sourceTree = "<group>"; };
+		E061F4CD1993E78E00E3101D /* CoreLocationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreLocationController.m; sourceTree = "<group>"; };
+		E061F4D019942B1800E3101D /* Campwhere.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Campwhere.xcdatamodel; sourceTree = "<group>"; };
 		E099635D1991350200C17625 /* Campwhere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Campwhere.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E09963601991350200C17625 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E09963621991350200C17625 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -62,8 +118,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E04059201992BD4C00E26A16 /* QuartzCore.framework in Frameworks */,
+				E04059211992BD4C00E26A16 /* SystemConfiguration.framework in Frameworks */,
+				E040591D1992BD4000E26A16 /* OpenGLES.framework in Frameworks */,
+				E04059191992BD3500E26A16 /* libc++.dylib in Frameworks */,
+				E040591A1992BD3500E26A16 /* libicucore.dylib in Frameworks */,
+				E040591B1992BD3500E26A16 /* libz.dylib in Frameworks */,
+				E04059261992C0BB00E26A16 /* GoogleMaps.framework in Frameworks */,
+				E04059101992BD0400E26A16 /* AVFoundation.framework in Frameworks */,
+				E04059111992BD0400E26A16 /* CoreData.framework in Frameworks */,
+				E04059121992BD0400E26A16 /* CoreLocation.framework in Frameworks */,
+				E04059131992BD0400E26A16 /* CoreText.framework in Frameworks */,
+				E04059141992BD0400E26A16 /* GLKit.framework in Frameworks */,
+				E04059151992BD0400E26A16 /* ImageIO.framework in Frameworks */,
 				E09963631991350200C17625 /* CoreGraphics.framework in Frameworks */,
 				E09963651991350200C17625 /* UIKit.framework in Frameworks */,
+				E04059091992BCC200E26A16 /* GoogleMaps.framework in Frameworks */,
 				E09963611991350200C17625 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,6 +154,7 @@
 		E09963541991350100C17625 = {
 			isa = PBXGroup;
 			children = (
+				E061F4CF19942B1800E3101D /* Campwhere.xcdatamodeld */,
 				E09963661991350200C17625 /* Campwhere */,
 				E09963881991350200C17625 /* CampwhereTests */,
 				E099635F1991350200C17625 /* Frameworks */,
@@ -103,6 +174,21 @@
 		E099635F1991350200C17625 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E04059271992C11800E26A16 /* GoogleMaps.bundle */,
+				E04059251992C0BB00E26A16 /* GoogleMaps.framework */,
+				E040591E1992BD4C00E26A16 /* QuartzCore.framework */,
+				E040591F1992BD4C00E26A16 /* SystemConfiguration.framework */,
+				E040591C1992BD4000E26A16 /* OpenGLES.framework */,
+				E04059161992BD3500E26A16 /* libc++.dylib */,
+				E04059171992BD3500E26A16 /* libicucore.dylib */,
+				E04059181992BD3500E26A16 /* libz.dylib */,
+				E040590A1992BD0300E26A16 /* AVFoundation.framework */,
+				E040590B1992BD0400E26A16 /* CoreData.framework */,
+				E040590C1992BD0400E26A16 /* CoreLocation.framework */,
+				E040590D1992BD0400E26A16 /* CoreText.framework */,
+				E040590E1992BD0400E26A16 /* GLKit.framework */,
+				E040590F1992BD0400E26A16 /* ImageIO.framework */,
+				E04059081992BCC200E26A16 /* GoogleMaps.framework */,
 				E09963601991350200C17625 /* Foundation.framework */,
 				E09963621991350200C17625 /* CoreGraphics.framework */,
 				E09963641991350200C17625 /* UIKit.framework */,
@@ -118,9 +204,16 @@
 				E09963701991350200C17625 /* CampinAppDelegate.m */,
 				E09963721991350200C17625 /* Main_iPhone.storyboard */,
 				E09963751991350200C17625 /* Main_iPad.storyboard */,
+				E04059011992879400E26A16 /* CampinSearchBoxView.h */,
+				E04059021992879400E26A16 /* CampinSearchBoxView.m */,
+				E0405904199287BD00E26A16 /* CampinSearchBoxView.xib */,
 				E09963781991350200C17625 /* CampinViewController.h */,
 				E09963791991350200C17625 /* CampinViewController.m */,
+				E061F4CC1993E78E00E3101D /* CoreLocationController.h */,
+				E061F4CD1993E78E00E3101D /* CoreLocationController.m */,
 				E099637B1991350200C17625 /* Images.xcassets */,
+				E03AF31B19A409B0006851F8 /* CoreDataTutorial.sqlite */,
+				E04059061992A83300E26A16 /* boxBG.png */,
 				E09963671991350200C17625 /* Supporting Files */,
 			);
 			path = Campwhere;
@@ -167,6 +260,7 @@
 				E099635B1991350200C17625 /* Resources */,
 			);
 			buildRules = (
+				E09A319E19A7AF7A0045FEDC /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -203,6 +297,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Dan Shriver";
 				TargetAttributes = {
+					E099635C1991350200C17625 = {
+						DevelopmentTeam = NT24FRE93J;
+					};
 					E09963801991350200C17625 = {
 						TestTargetID = E099635C1991350200C17625;
 					};
@@ -232,10 +329,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E04059241992BFD500E26A16 /* GoogleMaps.framework in Resources */,
 				E09963771991350200C17625 /* Main_iPad.storyboard in Resources */,
 				E099637C1991350200C17625 /* Images.xcassets in Resources */,
+				E04059071992A83300E26A16 /* boxBG.png in Resources */,
 				E09963741991350200C17625 /* Main_iPhone.storyboard in Resources */,
 				E099636B1991350200C17625 /* InfoPlist.strings in Resources */,
+				E0405905199287BD00E26A16 /* CampinSearchBoxView.xib in Resources */,
+				E04059281992C11800E26A16 /* GoogleMaps.bundle in Resources */,
+				E03AF31C19A409B0006851F8 /* CoreDataTutorial.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,8 +356,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E061F4CE1993E78E00E3101D /* CoreLocationController.m in Sources */,
 				E09963711991350200C17625 /* CampinAppDelegate.m in Sources */,
+				E061F4D119942B1800E3101D /* Campwhere.xcdatamodeld in Sources */,
 				E099636D1991350200C17625 /* main.m in Sources */,
+				E04059031992879400E26A16 /* CampinSearchBoxView.m in Sources */,
 				E099637A1991350200C17625 /* CampinViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,6 +453,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -380,6 +486,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -391,10 +498,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Dan Shriver (43Q674J7BQ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Campwhere/Campwhere-Prefix.pch";
 				INFOPLIST_FILE = "Campwhere/Campwhere-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "C7CBB1B6-4144-49F3-B07B-9329890B35F4";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -404,10 +519,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Dan Shriver (43Q674J7BQ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Campwhere/Campwhere-Prefix.pch";
 				INFOPLIST_FILE = "Campwhere/Campwhere-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "C7CBB1B6-4144-49F3-B07B-9329890B35F4";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -471,6 +594,7 @@
 				E09963941991350200C17625 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E09963951991350200C17625 /* Build configuration list for PBXNativeTarget "CampwhereTests" */ = {
 			isa = XCConfigurationList;
@@ -479,8 +603,22 @@
 				E09963971991350200C17625 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E061F4CF19942B1800E3101D /* Campwhere.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E061F4D019942B1800E3101D /* Campwhere.xcdatamodel */,
+			);
+			currentVersion = E061F4D019942B1800E3101D /* Campwhere.xcdatamodel */;
+			path = Campwhere.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E09963551991350100C17625 /* Project object */;
 }

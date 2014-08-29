@@ -11,17 +11,21 @@
 
 #import "CampinViewController.h"
 #import "CampinSearchBoxView.h"
+#import "CampinIphoneSearchBox.h"
 #import <GoogleMaps/GoogleMaps.h>
 #import <CoreData/CoreData.h>
 #import "CampinAppDelegate.h"
 
 @interface CampinViewController ()
 
+@property (weak, nonatomic) IBOutlet UIView *iPhoneMapView;
 
 @property (weak, nonatomic) IBOutlet UIView *iPadMapView;
 @property (weak, nonatomic) IBOutlet UIButton *iPadShowBtn;
+@property (weak, nonatomic) IBOutlet UIButton *iphoneShowButton;
 
 @property (nonatomic, strong) CampinSearchBoxView *iPadBox;
+@property (nonatomic, strong) CampinIphoneSearchBox *iphoneBox;
 
 @end
 
@@ -45,14 +49,17 @@
         
         
         mapView_ = [GMSMapView mapWithFrame:self.iPadMapView.frame camera:camera];
+        [self.view insertSubview:mapView_ belowSubview:self.iPadShowBtn];
     }
     else
     {
         // use iphone map view
+        mapView_ = [GMSMapView mapWithFrame:self.iPhoneMapView.frame camera:camera];
+        [self.view insertSubview:mapView_ belowSubview:self.iphoneShowButton];
     }
     
     mapView_.myLocationEnabled = YES;
-    [self.view insertSubview:mapView_ belowSubview:self.iPadShowBtn];
+    
     // Creates a marker in the center of the map.
     GMSMarker *marker = [[GMSMarker alloc] init];
     marker.position = CLLocationCoordinate2DMake(41.559991, -93.5996495);
@@ -70,7 +77,13 @@
 #pragma mark SearchBox delegate methods
 - (void)showButton
 {
-    self.iPadShowBtn.hidden = NO;
+    if (IDIOM == IPAD) {
+        self.iPadShowBtn.hidden = NO;
+    }
+    else {
+        self.iphoneShowButton.hidden = NO;
+    }
+    
 }
 
 - (void)startIpadSearchWithLocation:(CLLocationCoordinate2D)location radius:(int)searchRadius{
@@ -104,6 +117,40 @@
         [self animateMapAndPlotParksWithResults:results location:location];
     }
 }
+
+- (void)startIphoneSearchWithLocation:(CLLocationCoordinate2D)location radius:(int)searchRadius
+{
+    CampinAppDelegate *appDel = (CampinAppDelegate*)[UIApplication sharedApplication].delegate;
+    
+    double meanLatitude = location.latitude * M_PI / 180;
+    double deltaLatitude = searchRadius / EARTH_RADIUS * 180 / M_PI;
+    double deltaLongitude = searchRadius / (EARTH_RADIUS * cos(meanLatitude)) * 180 / M_PI;
+    double minLat = location.latitude - deltaLatitude;
+    double maxLat = location.latitude + deltaLatitude;
+    double minLong = location.longitude - deltaLongitude;
+    double maxLong = location.longitude + deltaLongitude;
+    
+    NSFetchRequest *searchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Park" inManagedObjectContext:appDel.managedObjectContext];
+    [searchRequest setEntity:entity];
+    // //   NSNumber *radiusNum = [NSNumber numberWithInteger:searchRadius];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:
+                              @"(%@ <= lng) AND (lng <= %@)"
+                              @"AND (%@ <= lat) AND (lat <= %@)",
+                              @(minLong), @(maxLong), @(minLat), @(maxLat)];
+    [searchRequest setPredicate:predicate];
+    searchRequest.returnsObjectsAsFaults = NO;
+    
+    NSError *fetchError = nil;
+    NSArray *results = [appDel.managedObjectContext executeFetchRequest:searchRequest error:&fetchError];
+    
+    if (!fetchError) {
+        // plot the parks found
+        [self animateMapAndPlotParksWithResults:results location:location];
+    }
+ 
+}
+
 
 - (void)animateMapAndPlotParksWithResults:(NSArray*)results location:(CLLocationCoordinate2D)searchLocation
 {
@@ -141,7 +188,7 @@
         bounds = [bounds includingCoordinate:thisPosition];
     }
     
-    [mapView_ animateWithCameraUpdate:[GMSCameraUpdate fitBounds:bounds withPadding:30.0f]];
+    [mapView_ animateWithCameraUpdate:[GMSCameraUpdate fitBounds:bounds withPadding:0.0f]];
 }
 
 - (IBAction)showIPadBox:(id)sender
@@ -163,6 +210,28 @@
         
         
     }];
+}
+
+- (IBAction)showIphoneSearchBox:(id)sender
+{
+    self.iphoneShowButton.hidden = YES;
+    CGFloat xPos = [UIScreen mainScreen].bounds.size.width - 10.0f;
+    self.iphoneBox = [[CampinIphoneSearchBox new] initWithFrame:CGRectMake(xPos, 32, 50, 50)];
+    self.iphoneBox.alpha = 0.0f;
+    self.iphoneBox.delegate = self;
+    [self.view insertSubview:self.iphoneBox aboveSubview:mapView_];
+    
+    // maybe add a bounce effect here
+    [UIView animateWithDuration:0.3f animations:^{
+        
+        CGRect newFrame = CGRectMake(10, 30, 300, 128);
+        self.iphoneBox.frame = newFrame;
+        self.iphoneBox.alpha = 1.0f;
+    } completion:^(BOOL finished) {
+        
+        
+    }];
+
 }
 
 @end

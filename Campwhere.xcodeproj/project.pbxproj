@@ -27,6 +27,9 @@
 		E04059241992BFD500E26A16 /* GoogleMaps.framework in Resources */ = {isa = PBXBuildFile; fileRef = E04059081992BCC200E26A16 /* GoogleMaps.framework */; };
 		E04059261992C0BB00E26A16 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E04059251992C0BB00E26A16 /* GoogleMaps.framework */; };
 		E04059281992C11800E26A16 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E04059271992C11800E26A16 /* GoogleMaps.bundle */; };
+		E061258619AFDB1800321C85 /* active-search-2-xxl.png in Resources */ = {isa = PBXBuildFile; fileRef = E061258519AFDB1800321C85 /* active-search-2-xxl.png */; };
+		E061258919B0015D00321C85 /* CampinIphoneSearchBox.m in Sources */ = {isa = PBXBuildFile; fileRef = E061258819B0015D00321C85 /* CampinIphoneSearchBox.m */; };
+		E061258B19B0018600321C85 /* CampinIphoneSearchBox.xib in Resources */ = {isa = PBXBuildFile; fileRef = E061258A19B0018600321C85 /* CampinIphoneSearchBox.xib */; };
 		E061F4CE1993E78E00E3101D /* CoreLocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E061F4CD1993E78E00E3101D /* CoreLocationController.m */; };
 		E061F4D119942B1800E3101D /* Campwhere.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E061F4CF19942B1800E3101D /* Campwhere.xcdatamodeld */; };
 		E09963611991350200C17625 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E09963601991350200C17625 /* Foundation.framework */; };
@@ -88,6 +91,10 @@
 		E040591F1992BD4C00E26A16 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		E04059251992C0BB00E26A16 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
 		E04059271992C11800E26A16 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		E061258519AFDB1800321C85 /* active-search-2-xxl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "active-search-2-xxl.png"; sourceTree = "<group>"; };
+		E061258719B0015D00321C85 /* CampinIphoneSearchBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CampinIphoneSearchBox.h; sourceTree = "<group>"; };
+		E061258819B0015D00321C85 /* CampinIphoneSearchBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CampinIphoneSearchBox.m; sourceTree = "<group>"; };
+		E061258A19B0018600321C85 /* CampinIphoneSearchBox.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CampinIphoneSearchBox.xib; sourceTree = "<group>"; };
 		E061F4CC1993E78E00E3101D /* CoreLocationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreLocationController.h; sourceTree = "<group>"; };
 		E061F4CD1993E78E00E3101D /* CoreLocationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreLocationController.m; sourceTree = "<group>"; };
 		E061F4D019942B1800E3101D /* Campwhere.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Campwhere.xcdatamodel; sourceTree = "<group>"; };
@@ -204,9 +211,13 @@
 				E09963701991350200C17625 /* CampinAppDelegate.m */,
 				E09963721991350200C17625 /* Main_iPhone.storyboard */,
 				E09963751991350200C17625 /* Main_iPad.storyboard */,
+				E061258519AFDB1800321C85 /* active-search-2-xxl.png */,
 				E04059011992879400E26A16 /* CampinSearchBoxView.h */,
 				E04059021992879400E26A16 /* CampinSearchBoxView.m */,
 				E0405904199287BD00E26A16 /* CampinSearchBoxView.xib */,
+				E061258719B0015D00321C85 /* CampinIphoneSearchBox.h */,
+				E061258819B0015D00321C85 /* CampinIphoneSearchBox.m */,
+				E061258A19B0018600321C85 /* CampinIphoneSearchBox.xib */,
 				E09963781991350200C17625 /* CampinViewController.h */,
 				E09963791991350200C17625 /* CampinViewController.m */,
 				E061F4CC1993E78E00E3101D /* CoreLocationController.h */,
@@ -333,9 +344,11 @@
 				E09963771991350200C17625 /* Main_iPad.storyboard in Resources */,
 				E099637C1991350200C17625 /* Images.xcassets in Resources */,
 				E04059071992A83300E26A16 /* boxBG.png in Resources */,
+				E061258B19B0018600321C85 /* CampinIphoneSearchBox.xib in Resources */,
 				E09963741991350200C17625 /* Main_iPhone.storyboard in Resources */,
 				E099636B1991350200C17625 /* InfoPlist.strings in Resources */,
 				E0405905199287BD00E26A16 /* CampinSearchBoxView.xib in Resources */,
+				E061258619AFDB1800321C85 /* active-search-2-xxl.png in Resources */,
 				E04059281992C11800E26A16 /* GoogleMaps.bundle in Resources */,
 				E03AF31C19A409B0006851F8 /* CoreDataTutorial.sqlite in Resources */,
 			);
@@ -362,6 +375,7 @@
 				E099636D1991350200C17625 /* main.m in Sources */,
 				E04059031992879400E26A16 /* CampinSearchBoxView.m in Sources */,
 				E099637A1991350200C17625 /* CampinViewController.m in Sources */,
+				E061258919B0015D00321C85 /* CampinIphoneSearchBox.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,7 +512,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Dan Shriver (43Q674J7BQ)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -509,7 +523,7 @@
 				INFOPLIST_FILE = "Campwhere/Campwhere-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "C7CBB1B6-4144-49F3-B07B-9329890B35F4";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -519,7 +533,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Dan Shriver (43Q674J7BQ)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -530,7 +544,7 @@
 				INFOPLIST_FILE = "Campwhere/Campwhere-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "C7CBB1B6-4144-49F3-B07B-9329890B35F4";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

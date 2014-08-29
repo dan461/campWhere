@@ -16,19 +16,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qqq-Mj-LeS">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qqq-Mj-LeS">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E1u-C0-CZl">
-                                <rect key="frame" x="698" y="32" width="50" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E1u-C0-CZl">
+                                <rect key="frame" x="680" y="50" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="JYD-2r-g9b"/>
-                                    <constraint firstAttribute="height" constant="50" id="Xge-nV-2uR"/>
+                                    <constraint firstAttribute="width" constant="60" id="JYD-2r-g9b"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="60" id="KNf-sd-43Y"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="RUK-WR-Fkh"/>
+                                    <constraint firstAttribute="height" constant="60" id="Xge-nV-2uR"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="Z4r-H0-NQG"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="60" id="pMV-p4-3hV"/>
                                 </constraints>
-                                <state key="normal" title="Search">
+                                <state key="normal" title="Search" image="active-search-2-xxl.png">
                                     <color key="titleColor" red="0.1135949413" green="0.49489795920000001" blue="0.1594016476" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -39,8 +43,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="E1u-C0-CZl" secondAttribute="trailing" constant="20" id="EWt-98-pYF"/>
-                            <constraint firstItem="E1u-C0-CZl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="12" id="HYc-qP-VB2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Qqq-Mj-LeS" secondAttribute="bottom" id="CIk-e9-ImJ"/>
+                            <constraint firstAttribute="trailing" secondItem="Qqq-Mj-LeS" secondAttribute="trailing" id="gXn-z9-Q2q"/>
+                            <constraint firstItem="Qqq-Mj-LeS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="j2m-2c-7H2"/>
+                            <constraint firstItem="E1u-C0-CZl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="l0I-1O-9Ip"/>
+                            <constraint firstAttribute="trailing" secondItem="E1u-C0-CZl" secondAttribute="trailing" constant="28" id="sqM-SK-0ZO"/>
+                            <constraint firstItem="Qqq-Mj-LeS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ww0-g1-Q0b"/>
                         </constraints>
                     </view>
                     <connections>
@@ -53,6 +61,9 @@
             <point key="canvasLocation" x="-113" y="-63"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="active-search-2-xxl.png" width="256" height="256"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

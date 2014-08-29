@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5023" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--Campin View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="CampinViewController" sceneMemberID="viewController">
@@ -15,13 +15,50 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Dg-20-2xN">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4uP-MW-la1">
+                                <rect key="frame" x="280" y="30" width="32" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="VMN-La-Mtd"/>
+                                    <constraint firstAttribute="height" constant="32" id="mrL-JO-jUh"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="active-search-2-xxl.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showIphoneSearchBox:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="tnY-P9-xtU"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="9Dg-20-2xN" secondAttribute="bottom" id="0Re-Y6-Wsd"/>
+                            <constraint firstAttribute="trailing" secondItem="4uP-MW-la1" secondAttribute="trailing" constant="8" id="ETT-cm-BsL"/>
+                            <constraint firstItem="4uP-MW-la1" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="10" id="JFl-if-Dmz"/>
+                            <constraint firstItem="9Dg-20-2xN" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="RdA-Ts-bWF"/>
+                            <constraint firstAttribute="trailing" secondItem="9Dg-20-2xN" secondAttribute="trailing" id="X8s-Uk-dxD"/>
+                            <constraint firstItem="9Dg-20-2xN" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="gaq-JW-Rfo"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="iPhoneMapView" destination="9Dg-20-2xN" id="PnE-TT-Hb8"/>
+                        <outlet property="iphoneShowButton" destination="4uP-MW-la1" id="9MI-Fs-9wd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-43" y="84"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="active-search-2-xxl.png" width="256" height="256"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
